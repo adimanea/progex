@@ -11,6 +11,8 @@ Will probably delve also into:
 - [CodeForces](https://codeforces.com/problemset);
 - [CodeChef](https://www.codechef.com/problems/school/?itm_medium=navmenu&itm_campaign=problems);
 - [Timus](https://acm.timus.ru/problemset.aspx);
-- [infoarena](https://infoarena.ro/arhiva).
+- [infoarena](https://infoarena.ro/arhiva);
+- [Programiz](https://www.programiz.com/);
+- [Kattis](https://open.kattis.com/problems).
 
 First languages of focus: C, C++ and Python.
