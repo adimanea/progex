@@ -16,3 +16,5 @@ Will probably delve also into:
 - [Kattis](https://open.kattis.com/problems).
 
 First languages of focus: C, C++ and Python.
+
+The main novelties I learn are in `til.org` here.

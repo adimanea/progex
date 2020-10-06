@@ -1,0 +1,54 @@
+#+TITLE: (Today) I Learned
+#+AUTHOR: Adrian Manea
+
+Here are some shortcuts to the most important things I learned while doing these exercises.
+They may not be the optimal solutions, but they work.
+
+* (C) Linking headers at compilation
+If a C program uses some external header files (such as =math.h=), when compiling with =gcc=,
+the explicit linking of the libraries is needed, with the =-lm= flag at compilation:
+#+begin_src sh
+  $ $ gcc ex1.c -o ex1.o -lm
+#+end_src
+
+* (C) Reading from file, one character at a time
+#+begin_src c
+  int main() {
+	char c;
+	FILE *fp;
+	int n;
+
+	fp = fopen("file", "r");
+
+	if (fp == NULL) return 0;		/* cannot read file */
+
+	while ((c = fgetc(fp)) != EOF)
+	  /* do something with c */
+	  n = c - '0';				/* storing c as digit */
+
+	fclose(fp);
+  
+	return 0;
+  }  
+#+end_src
+
+* (C) Reading numbers from file
+#+begin_src c
+  int main() {
+	FILE *fp;
+	int x;
+
+	fp = fopen("file", "r");
+	if (fp == NULL) return 0;
+
+	fscanf(fp, "%d", &x);		    /* read first int */
+	while (!feof(fp)) {
+	  /* do something with x */
+	  fscanf(fp, "%d", &x);		/* read next int */
+	}
+
+	fclose(fp);
+
+	return 0;
+  }
+#+end_src
