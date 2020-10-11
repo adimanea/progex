@@ -29,10 +29,7 @@ int main() {
 	numberOfDivs = countDivs(nthTriang(nth++));
 	
 
-  printf("%d is the %d triangular number with over 500 divs.\n", nthTriang(nth-1), nth-1);
+  printf("%lu is the %d triangular number with over 500 divs.\n", nthTriang(nth-1), nth-1);
 
   return 0;
 }
-	  
-							 
-  
